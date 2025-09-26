@@ -1,0 +1,159 @@
+# Tennis Ball Tracking Project - Git Ignore File
+# =================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+tennis_venv/
+venv/
+env/
+ENV/
+
+# PyTorch Models (large files)
+models/*.pt
+models/*.pth
+models/*.pkl
+models/*.bin
+
+# Video Files (large media files)
+assets/*.mp4
+assets/*.avi
+assets/*.mov
+assets/*.mkv
+assets/*.webm
+assets/*.wmv
+
+# Tracking Output Data (generated files)
+tennis_tracking*.json
+tracking_verification.mp4
+*.tracking
+
+# Blender Files (optional - might be large)
+*.blend
+*.blend1
+*.blend2
+
+# TrackNet Repository (external dependency)
+TrackNet/
+
+# Temporary Files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# pytest
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Data files that might be large
+*.npy
+*.npz
+*.h5
+*.hdf5
+
+# Log files
+*.log
+logs/
+
+# Configuration files with sensitive data (if any)
+config.ini
+secrets.json
+
+# Backup files
+*.bak
+*.backup
+
+# Verification videos (can be large)
+*verification*.mp4
+*verification*.avi
+
+# Any compiled extensions
+*.dll
+*.dylib
+
+# Test output
+test_output/
+test_results/
+
+# Any personal notes or drafts
+notes.txt
+todo.txt
+draft*.md
+
+# Large datasets
+datasets/
+data/
+
+# Compiled translations
+*.mo
+*.pot
