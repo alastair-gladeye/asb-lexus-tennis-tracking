@@ -51,13 +51,13 @@ tennis_tracking*.json
 tracking_verification.mp4
 *.tracking
 
-# Blender Files (optional - might be large)
+# TrackNet Repository (external dependency - downloaded by setup)
+TrackNet/
+
+# Blender Files (generated during development/testing)
 *.blend
 *.blend1
 *.blend2
-
-# TrackNet Repository (external dependency)
-TrackNet/
 
 # Temporary Files
 *.tmp
