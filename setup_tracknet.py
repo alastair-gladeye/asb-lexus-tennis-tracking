@@ -40,6 +40,14 @@ class TrackNetSetup:
                 "https://github.com/yastrebksv/TrackNet.git",
                 str(self.tracknet_dir)
             ], check=True)
+            
+            # Remove git repository from TrackNet to avoid nested git repos
+            tracknet_git_dir = self.tracknet_dir / ".git"
+            if tracknet_git_dir.exists():
+                import shutil
+                shutil.rmtree(tracknet_git_dir)
+                print("🧹 Removed TrackNet git repository (keeping as dependency folder)")
+            
             print("✅ TrackNet cloned successfully")
             return True
         except subprocess.CalledProcessError as e:
